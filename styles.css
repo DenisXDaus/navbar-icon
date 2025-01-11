@@ -1,0 +1,76 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    position: relative;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px;
+    padding: 10px 0;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-item {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.bubble img {
+    width: 24px;
+    height: 24px;
+    filter: invert(50%);
+    transition: transform 0.3s;
+}
+
+.nav-item:hover .bubble {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-item:hover .bubble img {
+    transform: scale(1.2);
+    filter: invert(0%);
+}
